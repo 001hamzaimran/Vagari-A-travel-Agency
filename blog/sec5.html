@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html,
+    body {
+      width: 100%;
+      font-family: "Poppins", sans-serif !important;
+      height: 100%;
+      overflow-x: hidden;
+      /* background: var(--primary-color); */
+    }
+    
+    :root {
+      --primary-color: #F2F2F2;
+      --secondary-color: #1BBC9B;
+      --side-color: #434A54;
+    
+    }
+    
+    /* width */
+    ::-webkit-scrollbar {
+      width: .5rem;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #cecece;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--secondary-color);
+      border-radius: 10rem;
+      -webkit-border-radius: 10rem;
+      -moz-border-radius: 10rem;
+      -ms-border-radius: 10rem;
+      -o-border-radius: 10rem;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    
+    li,
+    ul,
+    ol {
+      list-style: none;
+    }
+    
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    nav {
+      /* height: 15vh; */
+      background-color: var(--primary-color);
+    }
+    
+    .nav-link:hover {
+      color: var(--secondary-color) !important;
+    }
+    section{background-color: #F2F2F2;
+    height: 400px;
+    width: 100%;
+    
+    
+    }
+
+    .circle{
+    height: 40px;
+    width: 40px;
+    background-color: #1BBC9B;
+    border-radius: 100%;
+    margin-right: 10px;
+   display: block;
+   justify-content: center;
+   margin-left: 47%;
+
+  }
+  .circle>img{
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .circle:hover{
+    animation: shakeX;
+    animation-duration: 2s; 
+  }
+  .sec{
+  padding: 100px;
+
+  }
+ 
+  h1,h5{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+ p{
+    padding: 10px;
+    color: #555;
+    
+ }
+ .img:hover{
+  animation: headShake;
+  animation-duration: 2s; 
+ }
+
+ swiper-container {
+      width: 100%;
+      height: 50%;
+      background-color:  #F2F2F2;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-color: #F2F2F2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30%;
+      margin-top: 10%;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  div>h6>span{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    font: 30px "reenie beanie";
+    color: #1BBC9B;
+  }
+
+   .btn{
+       
+        text-decoration: none;
+        color: aliceblue;
+        background-color: #1BBC9B;
+        border-radius: 5px;
+        /* font: 16px "Poppins", sans-serif !important ; */
+        
+    }
+    .btn:hover{
+        display: inline-block;
+  margin: 0 0.5rem;
+
+ animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+    }
+    .card{
+        width: 100%;
+      border: none;
+      padding: 5px;
+    }
+ 
+    
+   
+    
+    .card>img{
+        border-radius: 20px;
+    }
+    .card>img:hover{
+        opacity: 0.6;
+ 
+    }
+  </style>
+</head>
+<body>
+    <section>
+        <div class="sec">
+            <h1>Explore the Wonders</h1>
+            <h5>Apr 7 2023</h5>
+            <div class="circle"><img src="img/icons8-dropdown-30.png" alt=""></div>
+        </div>  
+    </section>
+    <div class="conatianer">
+        <div class="row">
+            <div class="col-12">
+                <img class="img"src="img/i-parallax-13-1024x683.jpeg" style="height:auto; width: 100%; padding: 10px; border-radius: 30px;" alt="">
+                <p>There are so many places to explore, so many adventures waiting for you. What makes a great travel destination? It depends on what kind of traveler you are: whether it's culture, natural beauty or history that interests you most; whether your idea of fun is hiking through mountains or lounging on white-sand beaches; if food is more important than sights when planning an itinerary (and vice versa).</p>
+                <p>There are also practical considerations like cost and time spent traveling from place to place and maybe even how much luggage space there is in the car/plane/train compartment where we'll be sleeping tonight! But no matter what kind of traveler they are or what they're looking for out of their next trip abroad, everyone should consider many factors before booking their flight(s).</p>
+              </div>
+            </div>
+          </div>
+          <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide><p>Just got back from the most incredible trip to Thailand, thanks to World Getaways! Their travel agent,
+              Sarah, was fantastic. She listened to what we were looking for (relaxation, culture, and some adventure)
+              and put together a perfect itinerary. The hotels were all great, the tours were well-organized, and
+              everything ran smoothly. Highly recommend World Getaways for anyone planning a trip to Southeast Asia!</p></swiper-slide>
+            <swiper-slide><p>TravelSmart made our honeymoon in Greece absolutely unforgettable. They found us a beautiful
+              boutique hotel with stunning ocean views, and arranged private tours of Santorini and Mykonos. We even had a
+              romantic candlelit dinner on the beach! Everything was perfectly planned and executed, and we couldn't have
+              asked for a more magical experience. Thank you, TravelSmart!</p></swiper-slide>
+            <swiper-slide><p>Planning a family vacation can be stressful, but Adventure Travel took all the hassle out of it.
+              They found us a family-friendly resort in the Caribbean with tons of activities for the kids, and even
+              arranged for childcare a few nights so we could have some adult time. The flights were smooth, the transfers
+              were easy, and everything was exactly as promised. We had a blast, and the kids are already asking to go
+              back!</p></swiper-slide>
+          </swiper-container>
+                  <div class="container-fluid">
+                <p>Our team of experienced travel experts is here to help you plan every aspect of your trip, from flights and accommodations to activities and tours. We understand that everyone's travel preferences are unique, which is why we take the time to get to know you and your travel style before creating a personalized itinerary. Once the project starts, it is important to check in with the handyman on a regular basis to ensure the job is being completed correctly. The homeowner should also ensure that the handyman is following safety protocols.</p>
+                <div class="row">
+                    <div class="col-md-6"><img class="img" src="img/i-parallax-03-package-01-1024x683.jpeg" style="height: auto; width: 100%; padding: 5px; border-radius: 20px;" alt=""></div>
+                        <div class="col-md-6">
+                        <img class="img"src="img/i-parallax-04-package-02-1024x683.jpeg" style="height: auto; width: 100%; padding: 5px; border-radius: 20px;" alt="">
+                        </div>
+                </div>
+
+                <h1>Business & Holiday Travel</h1>
+                <p>Whether you're traveling solo, with a partner, or with a group, we are committed to providing you with a stress-free and unforgettable travel experience. So why wait? Contact us today to start planning your next adventure! Handyman services are an ideal solution for busy homeowners. Instead of spending time trying to fix things around the house, you can leave it to the professionals and have them take care of it for you.</p>
+                <img class="img"src="img/i-parallax-05-package-03-1024x683.jpeg" style="height:auto; width: 100%; padding: 10px; border-radius: 30px;" alt="">
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+  <h6><span>Travel Blog</span></h6>
+ 
+ <h1>Latest Articles</h1>
+</div>
+</div>
+        <div class="row">
+          <div class="col-md-4">  <div class="card" >
+            <img src="img/i-parallax-15-1024x683.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Discover the Hidden Gems</h5>
+              <p class="card-text">Benefits of traveling alone, from the freedom to discover new places with new friends.</p>
+              <a href="sec2.html" class="btn" >Read More</a>
+            </div>
+          </div></div>
+          <div class="col-md-4">  <div class="card" >
+            <img src="img/i-parallax-14-1024x683 (1).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-left">Must-See Landmarks</h5>
+              <p class="card-text">Iconic landmarks that make Europe one of the world's most popular travel destinations.</p>
+              <a href="sec3.html" class="btn" >Read More</a>
+            </div>
+          </div></div>
+          <div class="col-md-4">  <div class="card" >
+            <img src="img/i-parallax-12-1024x683.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Traveling on a Budget</h5>
+              <p class="card-text">Practical advice for travelers who want to see the world without breaking the bank.</p>
+              <a href="sec4.html" class="btn" >Read More</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>

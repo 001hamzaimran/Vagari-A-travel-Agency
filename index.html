@@ -7,8 +7,9 @@
   <title>Vagari|Home</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css" media="screen and (min-width:1200px)">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <!-- bootstrap cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -35,10 +36,10 @@
             <a class="nav-link " aria-current="page" href="feedback.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="Contact.html">Blogs</a>
+            <a class="nav-link " aria-current="page" href="blog/blog2.html">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="Franchise.html">Contact Us</a>
+            <a class="nav-link " href="contact/contact.html">Contact Us</a>
           </li>
 
         </ul>
@@ -54,7 +55,7 @@
   <section class="Wrapper">
     <div class="hero_banner">
       <div class="content">
-        <h1 class="display-1 fw-bold ">Adventure & Experience The Travel !</h1>
+        <h1 class="display-1 fw-bolder "><span>Adventure</span> & Experience The Travel !</h1>
       </div>
       <div class="parallex_1">
         <div class="img"></div>
@@ -67,7 +68,7 @@
 
 
   <section class="dream_vac ">
-    <div class="vacation_content col-md-6 m-5">
+    <div class="vacation_content col-md-6 m-5 z-2 ">
       <div class="tagline fw-bold ">Dream Vacation Destination</div>
       <h1 class="display-5 fw-bold">Plan the Trip of a Lifetime with Ease</h1>
       <p style="width: 91%;">Whether you're looking for a romantic getaway, a family-friendly adventure, or a solo
@@ -83,7 +84,7 @@
   <section class="category_sec ">
     <div class="brand brand1">
       <div class="img ">
-        <img width="85 " height="85 " class="img-fluid z-3 " src="public/banner1.gif" alt="">
+        <img width="85 " height="85 " class="img-fluid z-3 " src="public/Assets/iconlocation.gif" alt="">
       </div>
       <div class="content">
         <h3 class="z-3 conthead">City Walks Tour</h3>
@@ -91,7 +92,7 @@
     </div>
     <div class="brand brand2">
       <div class="img ">
-        <img width="85 " height="85 " class="img-fluid z-3 " src="public/banner2.gif" alt="">
+        <img width="85 " height="85 " class="img-fluid z-3 " src="public/Assets/iconmount.gif" alt="">
       </div>
       <div class="content">
         <h3 class="z-3 conthead">Electric Bikes</h3>
@@ -99,7 +100,7 @@
     </div>
     <div class="brand brand3">
       <div class="img ">
-        <img width="85 " height="85 " class="img-fluid z-3 " src="public/banner3.gif" alt="">
+        <img width="85 " height="85 " class="img-fluid z-3 " src="public/Assets/icontemple.gif" alt="">
       </div>
       <div class="content">
         <h3 class="z-3 conthead">Skyscrapers View</h3>
@@ -108,12 +109,139 @@
   </section>
 
 
-  <br><br><br><br>
+  <!-- <section class="hot_Products container-fluid  ">
+    <!-<div class="col-md-4 g-0   main_hot_product_Wrapper ">
+      <div class="hot_prod_img">
+        <i ></i>
+      </div>
+      <div class="main_content p-4 ">
+        <div class="content_hot_prod">
+          <h2 class="diplay-4 fw-semibold ">Chang Miao</h2>
+          <p><span class="icon_span"><img src="public/Assets/iconloc.png" class="img-fluid " alt=""></span>Thailand</p>
+        </div>
+        <hr>
+        <div class="hot_prod_desc">
+          <p>Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.</p>
+        </div>
+        <hr>
+        <div class="hot_prod_btn">
+          <button > Detail</button>
+          <div class="hot_prod_price">
+            <h5>FROM</h5>
+            <h3>$1540</h3>
+          </div>
+        </div>
+      </div>
+    </div> --
+  </section> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+
+  <section class="choose_your_trip mt-4 ">
+    <h3 class="fw-bolder styler_text">Choose Your Trip</h3>
+    <h2 class="display-6 fw-semibold  ">Start your Vacation Now</h2>
+    <p class="fw-normal ">Looking for your dream vacation destination but don't know where to start? With the help of experienced and knowledgeable travel agents, you can plan the trip of a lifetime with ease.</p>
+
+
+    <div class="search_bar">
+      <div class="select_section">
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i> </div>
+
+        <div class="searchhead">
+          <h3>Search</h3>
+          <input type="text" name="name" id="Name" placeholder="insert Keyword">
+        </div>
+
+      </div>
+      <div class="select_section">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i> </div>
+
+        <div class="searchhead">
+          <h3>Destination</h3>
+          <select class="form-select form-select-sm" name="cars" id="cars">
+            <option value="nothing" selected>Select Typology</option>
+            <optgroup label="Africa">
+              <option value="volvo">-Nigeria</option>
+              <option value="saab">-Egypt</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="mercedes">-Greece</option>
+              <option value="audi">-France</option>
+              <option value="audi">-Italy</option>
+            </optgroup>
+            <optgroup label="Asia">
+              <option value="mercedes">-Thailand</option>
+              <option value="audi">-Japan</option>
+              <option value="audi">-Pakistan</option>
+            </optgroup>
+            <optgroup label="USA">
+              <option value="mercedes">-California</option>
+            </optgroup>
+          </select>
+        </div>
+
+      </div>
+      <div class="select_section">
+        <div class="icon"><i class="fa-solid fa-list-ul"></i></div>
+
+        <div class="searchhead">
+          <h3>Typologies</h3>
+          <select class="form-select form-select-sm" name="cars" id="cars">
+            <option value="nothing" selected>Select Destination</option>
+            <option value="Sport Activities" >Sport Activities</option>
+            <option value="Family-Friendly" >Family-Friendly</option>
+            <option value="Road Trip" >Road Trip</option>
+            <option value="Budget Tour" >Budget Tour</option>
+            <option value="Adventure Travel" >Adventure Travel</option>
+            <option value="Eco Tourism" >Eco Tourism</option>
+            <option value="Beach Holidays" >Beach Holidays</option>
+            <option value="Cultural Tours" >Cultural Tours</option>
+
+            </select>
+          
+        </div>
+
+      </div>
+      <div class="select_section">
+        <button>Search</button>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="next_adventure">
+    <div class="adv_content w-50 ">
+      <h3 class="styler_text fw-bolder fs-2 ">Next Adventure</h3>
+      <h2 class="display-4 fw-bolder text-start ">Travel Destinations Available Worldwide</h2>
+      <p class="fw-regular">We have compiled a list of top destinations across the globe, scoured the world for the most alluring and fascinating places to visit. From the beautiful beaches of the Caribbean to the majestic mountains of Europe and the vibrant cities of Asia, our destination list has something for everyone</p>
+    </div>
+
+    <div class="adv_img container-fluid  ">
+      <div class="img_div">
+        <img src="public/Assets/adv_africa.jpeg" alt="">
+        <div class="content_adv"></div>
+      </div>
+      <div class="img_div">
+        <img src="public/Assets/adv_egypt.jpeg" alt="">
+        <div class="content_adv"></div>
+      </div>
+      <div class="img_div">
+        <img src="public/Assets/adv_france.jpeg" alt="">
+        <div class="content_adv"></div>
+      </div>
+      <div class="img_div">
+        <img src="public/Assets/adv_greece.jpeg" alt="">
+        <div class="content_adv"></div>
+      </div>
+  </section>
+  
+  <br>
+  <br>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  
+  <script type="module" src="products.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 

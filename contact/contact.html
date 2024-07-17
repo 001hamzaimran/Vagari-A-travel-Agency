@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    h1 {
+      z-index: 2;
+      font-size: 4rem;
+      font-family: "Poppins", sans-serif !important;
+
+    }
+
+
+
+    .container-fluid {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      /* border: 1px solid #ccc; */
+      /* background-color: white; */
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1BBC98;
+      font: 30px "reenie beanie", sans-sarif;
+
+    }
+
+    h1 {
+      font-size: 4rem;
+
+      font-family: "Poppins", sans-serif !important;
+    }
+
+    /* .container{
+      padding: 0%;
+    } */
+
+    .contact-info {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    .content {
+      margin-top: 20px;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .content>p {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.5rem;
+    }
+
+
+    /* label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    } */
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      background-color: #F2F2F2;
+    }
+
+    input {
+      background-color: #F2F2F2;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .error {
+      color: rgb(10, 9, 9);
+      /* font-weight: bold; */
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #1BBC98;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: rgb(61, 57, 57);
+    }
+
+    .circle {
+      height: 40px;
+      width: 40px;
+      background-color: #ccc;
+      border-radius: 100%;
+      margin-right: 10px;
+
+    }
+
+    .circle,
+    img {
+      margin-top: 5px;
+      margin-left: 5px;
+
+    }
+
+    .circle:hover {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: shakeX;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      /* don't forget to set a duration! */
+    }
+
+    iframe {
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    style="height: 500px; width: 100%; background-image: url('img/i-parallax-11.jpeg'); background-size: cover; background-position: center;">
+    <h1 class=" fw-bolder text-white" style="display: flex; align-items: center;
+    justify-content: center; padding-top: 230px;">Contact Us</h1>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 contact-info">
+
+        <div class="d-flex">
+          <div class="circle"><img src="img/icons8-location-30.png" alt=""></div>
+          <h3 class="fw-bolder"> Location</h3>
+        </div>
+        <div class="content">
+          <p>Travel Agency</p>
+          <p>
+            1626 Michigan Ave, Miami Beach
+
+            FL 33139, United States</p>
+          <p>Travel Operator
+          <p>
+
+          <p> 2001 Biscayne Blvd, Miami
+
+            FL 33137, United States</p>
+        </div>
+      </div>
+      <div class="col-md-4 contact-info">
+        <div class="d-flex">
+          <div class="circle"><img src="img/icons8-phone-30.png" alt=""></div>
+          <h3 class="fw-bolder"> Give us a call</h3>
+        </div>
+        <div class="content">
+          <p>Mobile Number</p>
+          <p> Paul Davis "Tour Consultant" : +1 629 592 593
+
+            Amy Moore "Local Guide" : +1 483 842 205</p>
+          <p>Office Number</p>
+
+          <p> Administration : +1 184 016 482
+
+            Technical Office +1 963 935 836</p>
+        </div>
+      </div>
+      <div class="col-md-4 contact-info">
+        <div class="d-flex">
+          <div class="circle"><img src="img/icons8-email-30.png" alt=""></div>
+          <h3 class="fw-bolder"> Write for anything</h3>
+        </div>
+        <div class="content">
+          <p>Quotes</p>
+          <p> Write to this email for a detailed quotation quote@travel.com and information.</p>
+          <p>Consulting</p>
+
+          <p> Our free consultation service can be requested here info@travel.com every day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="fw-bolder">Plan your Next Trip</h2>
+        <h1 class="fw-bolder">Get in Touch</h1>
+        <form id="contact-form">
+          <div class="error"></div>
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="name" placeholder="Type your name" required>
+          <!-- <label for="email">Email:</label> -->
+          <input type="text" id="email" name="email" placeholder="insert your email" required>
+          <!-- <label for="message">Message:</label> -->
+          <textarea id="message" name="message" placeholder="write your message"></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71502.9446985236!2d-3.2877394284743344!3d55.9412769995642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh%2C%20UK!5e0!3m2!1sen!2s!4v1720693328419!5m2!1sen!2s"
+      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+  <script>
+    const form = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const errorElement = document.querySelector('.error');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      let errorMessage = '';
+
+      // Name validation - only letters and spaces allowed
+      const nameRegex = /^[a-zA-Z ]+$/;
+      if (!nameRegex.test(nameInput.value)) {
+        errorMessage += 'Invalid name. Please enter only letters and spaces. \n';
+      }
+
+      // Email validation - basic email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        errorMessage += 'Invalid email address. Please enter a valid email format. \n';
+      }
+
+      // Message validation - required field
+      if (messageInput.value === '') {
+        errorMessage += 'Please enter a message. \n';
+      }
+
+      if (errorMessage) {
+        errorElement.textContent = errorMessage;
+        return;
+      }
+
+      // Form submission logic (replace with your actual submission process)
+      alert('Form submitted successfully!');
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>

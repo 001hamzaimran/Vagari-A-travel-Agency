@@ -1,5 +1,12 @@
 @media screen and (max-width:1200px) {
 
+    :root {
+        --primary-color: #F2F2F2;
+        --secondary-color: #1BBC9B;
+        --side-color: #434A54;
+
+    }
+
     .hero_banner {
         grid-template-columns: repeat(2, 1fr);
 
@@ -40,18 +47,93 @@
         gap: 1rem;
 
     }
-    .brand{
-        width: 95%;
-        border-radius:.5rem ;
-        -webkit-border-radius:.5rem ;
-        -moz-border-radius:.5rem ;
-        -ms-border-radius:.5rem ;
-        -o-border-radius:.5rem ;
-}
 
-    .conthead{
+    .brand {
+        width: 95%;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+    }
+
+    .conthead {
         font-size: smaller;
     }
+
+
+    .hot_Products {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .main_hot_product_Wrapper {
+        height: 100%;
+        overflow: visible;
+
+
+    }
+
+    .choose_your_trip {
+        height: 100dvh;
+
+        & p {
+            text-align: center;
+            width: 90%;
+            color: #555;
+          }
+
+        & .search_bar {
+            display: flex;
+            width: 90%;
+            height: 70dvh;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0 3rem;
+
+            & .select_section {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                padding: 1.2rem 3%;
+            }
+
+            & h3{
+                font-size: 1rem;
+
+            }
+
+        }
+
+        &.searchhead {
+
+            & input,
+            select {
+                outline: none;
+                border: none;
+                text-align: left;
+
+            }
+        }
+    }
+
+    .icon {
+        width: 0%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+  
+        & i {
+          color: #F3A46B;
+          font-size: .4rem;
+        }}
 }
 
 
@@ -101,5 +183,23 @@
 
         justify-items: center;
         background-size: contain;
+    }
+
+    .dream_vac {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--primary-color);
+            opacity: .3;
+            z-index: 1;
+        }
     }
 }

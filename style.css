@@ -68,6 +68,11 @@ nav {
   color: var(--secondary-color) !important;
 }
 
+.styler_text {
+  font-family: "Reenie Beanie";
+  color: var(--secondary-color);
+}
+
 
 
 /* Main Hero Banner */
@@ -119,6 +124,25 @@ nav {
   & h1 {
     font-size: 4rem;
     margin-left: 4%;
+    z-index: 2;
+
+    & span {
+      width: 100%;
+      position: relative;
+      height: 100%;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        background-color: #FFD205;
+        bottom: 20%;
+        z-index: 1;
+        left: 0;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -172,6 +196,7 @@ nav {
   background-size: 65% 200%;
   position: relative;
   background-repeat: no-repeat;
+  z-index: 1;
   background-position: right;
 }
 
@@ -212,6 +237,7 @@ nav {
 
 .brand {
   width: 100%;
+  /* height: 70%; */
   background: #000;
   /* opacity: 0.1; */
   margin: 0 1rem;
@@ -267,19 +293,228 @@ nav {
 }
 
 .brand1 {
-  background-image: url("public/category1.jpeg");
+  background-image: url("public/Assets/category1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .brand2 {
-  background-image: url("public/category2.jpeg");
+  background-image: url("public/Assets/category2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .brand3 {
-  background-image: url("public/category3.jpeg");
+  background-image: url("public/Assets/category3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* HOT PRODUCTS */
+
+
+.hot_Products {
+  margin-top: 3.3rem;
+  /* overflow: hidden !important; */
+  width: 100%;
+  height: 100dvh;
+  gap: 3%;
+  display: flex;
+  /* grid-template-columns: repeat(3,1fr); */
+}
+
+
+.main_hot_product_Wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 91%;
+  filter: drop-shadow(8px 12px 16px #0000003a);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: white !important;
+  -webkit-filter: drop-shadow(8px 12px 16px #0000003a);
+}
+
+.hot_prod_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & button {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 6rem;
+    height: 2.3rem;
+    border-radius: 0.4rem;
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+  }
+}
+
+.icon_span>i {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--secondary-color);
+}
+
+
+
+.hot_prod_price {
+  text-align: right;
+
+  & h5 {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  & h3 {
+    font-weight: 600;
+
+  }
+}
+
+
+
+.choose_your_trip {
+  width: 100%;
+  height: 80dvh;
+  background-color: #dfdede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+
+  & p {
+    width: 60%;
+
+    text-align: center;
+    color: #555;
+  }
+}
+
+
+.search_bar {
+  background-color: white;
+  height: 15dvh;
+  border-radius: 1.5rem;
+  width: 95%;
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 1fr; */
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  padding: 0 2rem;
+
+  & .select_section {
+    border-right: 1px solid rgba(211, 211, 211, 0.473);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3%;
+    width: 100%;
+
+    &:nth-child(4) {
+      border: 0;
+    }
+
+    & .icon {
+      width: 20%;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      & i {
+        color: #F3A46B;
+        font-size: 2rem;
+      }
+
+    }
+
+    & button {
+      width: 100%;
+      height: 3rem;
+      border-radius: .5rem;
+      color: white;
+      font-size: 1.2rem;
+      background-color: #F76570;
+      outline: 0;
+      border: 0;
+      -webkit-border-radius: .5rem;
+      -moz-border-radius: .5rem;
+      -ms-border-radius: .5rem;
+      -o-border-radius: .5rem;
+    }
+
+  }
+
+
+  & .searchhead {
+    width: 100%;
+    height: 80%;
+
+    & h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    & input,
+    select {
+      outline: none;
+      border: none;
+      text-align: left;
+    }
+  }
+
+
+}
+
+
+
+.next_adventure{
+  height: 100dvh;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2%;
+}
+
+.adv_img{
+  height: 60%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.img_div{
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  & img{
+    
+  }
 }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../responsive.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+
+    h1 {
+      z-index: 2;
+    }
+
+    .main_blog {
+      height: 80vh;
+      background-image: url('img/i-parallax-02-slide.jpeg');
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      align-items: center;
+      position: relative;
+
+
+      &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(3, 0, 0, 0.322);
+
+      }
+    }
+
+
+
+    h3 {
+      font: 2rem;
+      /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+      font-family: "Poppins", sans-serif !important;
+    }
+
+    .btn {
+
+      text-decoration: none;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      border-radius: .5rem;
+      /* font: 16px "Poppins", sans-serif !important ; */
+
+    }
+
+    .btn:hover {
+      color: var(--primary-color);
+      display: inline-block;
+      animation: pulse;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      /* don't forget to set a duration! */
+    }
+
+    .card {
+      width: 96%;
+      border: none;
+    }
+
+    .card>img {
+      transition: 0.4s ease-in-out;
+      border-radius: 1.4rem;
+    }
+
+    .card>img:hover {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="nav-brand" href="index.html "><img src="Assets/logo.png" width="100px" alt="logo"
+          class="img-fluid gx-0 m-0 "></a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" 
+              href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="catering.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="feedback.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  style="color: #1BBC9B;" aria-current="page" href="./blog2.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../contact/contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="container-fluid mb-5 main_blog">
+    <h1 class="text-center fw-bolder display-3 text-white">Our Blog</h1>
+  </section>
+
+
+  <!-- --------------------------------- -->
+  <center>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="img/i-parallax-11.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Plan the Perfect Vacation</h3>
+              <p class="card-text">Planning a vacation can be overwhelming, but this post offers a step-by-step guide to
+                help readers create a comprehensive travel itinerary.</p>
+              <a href="sec1.html" class="btn btn-block">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="img/i-parallax-13-1024x683.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Explore the Wonders</h3>
+              <p class="card-text">Must-see destinations and experiences, including wildlife and cultural experiences.
+              </p>
+              <a href="sec5.html" class="btn btn-block">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="img/i-parallax-12-1024x683.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Traveling on a Budget</h3>
+              <p class="card-text">Practical advice for travelers who want to see the world without breaking the bank.
+              </p>
+              <a href="sec4.html" class="btn btn-block">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="img/i-parallax-14-1024x683.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Must-See Landmarks</h3>
+              <p class="card-text">Iconic landmarks that make Europe one of the world's most popular travel
+                destinations.</p>
+              <a href="sec3.html" class="btn btn-block">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+
+</body>
+
+</html>
