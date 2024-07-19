@@ -47,25 +47,12 @@
       padding: 0%;
     } */
 
-    .contact-info {
-      padding-top: 100px;
-      padding-bottom: 100px;
-
-    }
 
     h3 {
       margin-top: 10px;
     }
 
-    .content {
-      margin-top: 20px;
-      gap: 20px;
-      text-align: left;
-    }
-
-    .content>p {
-      margin-top: 20px;
-    }
+    
 
     .contact-info p {
       margin-bottom: 0.5rem;
@@ -81,9 +68,9 @@
     input[type="text"],
     textarea {
       width: 100%;
-      padding: 10px;
+      padding: .8rem;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: .2rem;
       box-sizing: border-box;
       margin-bottom: 15px;
       background-color: #F2F2F2;
@@ -103,7 +90,7 @@
       margin-bottom: 10px;
     }
 
-    button {
+    .btns {
       background-color: #1BBC98;
       color: white;
       padding: 10px 20px;
@@ -113,35 +100,28 @@
       width: 100%;
     }
 
-    button:hover {
+    .btns:hover {
       background-color: rgb(61, 57, 57);
     }
 
-    .circle {
-      height: 40px;
-      width: 40px;
+    /* .circle {
+      height: 3rem;
+      width: 3rem;
+      display: grid;
+      align-items: center;
+      justify-items: center;
       background-color: #ccc;
       border-radius: 100%;
-      margin-right: 10px;
+      margin-right: 1rem;
 
     }
 
-    .circle,
-    img {
-      margin-top: 5px;
-      margin-left: 5px;
-
-    }
 
     .circle:hover {
-      display: inline-block;
-      margin: 0 0.5rem;
 
       animation: shakeX;
-      /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 2s;
-      /* don't forget to set a duration! */
-    }
+      animation-duration: 2s; 
+    } */
 
     iframe {
       width: 100%;
@@ -150,60 +130,61 @@
   </style>
 </head>
 
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-    <a class="navbar-brand" id="nav-brand" href="../index.html "><img src="Assets/logo.png" width="100px" alt="logo"
-        class="img-fluid gx-0 m-0 "></a>
-
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link " style="color: #1BBC9B;" aria-current="page" id="navli"
-            href="../index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " aria-current="page" href="catering.html">Booking</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="feedback.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="../blog/blog2.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./contact.html">Contact Us</a>
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-</nav>
 
 <body>
-  <div
-    style="height: 500px; width: 100%; background-image: url('img/i-parallax-11.jpeg'); background-size: cover; background-position: center;">
-    <h1 class=" fw-bolder text-white" style="display: flex; align-items: center;
-    justify-content: center; padding-top: 230px;">Contact Us</h1>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="nav-brand" href="../index.html "><img src="Assets/logo.png" width="100px" alt="logo"
+          class="img-fluid gx-0 m-0 "></a>
+  
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" id="navli"
+              href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="catering.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="feedback.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../blog/blog2.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #1BBC9B;" href="./contact.html">Contact Us</a>
+          </li>
+  
+        </ul>
+  
+      </div>
+  
+    </div>
+  </nav>
+  
+
+  <div  class="mb-4" style="height: 70vh; width: 100%; background-image: url('img/i-parallax-11.jpeg'); background-size: cover; background-position: center; display: grid; align-items: center; justify-items: center;">
+    <h1 class=" fw-bolder text-white">Contact Us</h1>
   </div>
 
 
-  <div class="container">
+  <!-- <div class="container-fluid mt-5 mb-5">
     <div class="row">
       <div class="col-md-4 contact-info">
 
-        <div class="d-flex">
+        <div class="head_div">
           <div class="circle"><img src="img/icons8-location-30.png" alt=""></div>
           <h3 class="fw-bolder"> Location</h3>
         </div>
-        <div class="content">
-          <p>Travel Agency</p>
+        <div class="content ">
+          <!-<p>Travel Agency</p>
           <p>
             1626 Michigan Ave, Miami Beach
 
@@ -213,7 +194,12 @@
 
           <p> 2001 Biscayne Blvd, Miami
 
-            FL 33137, United States</p>
+            FL 33137, United States</p> --
+
+            <li class="fw-medium">Travel Agency</li>
+            <li>1626 Michigan Ave, Miami Beach FL 33139, United States</li>
+            <li>Travel Operator</li>
+            <li>2001 Biscayne Blvd, Miami FL 33137, United States</li>
         </div>
       </div>
       <div class="col-md-4 contact-info">
@@ -247,12 +233,30 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+
+  <div class="container-fluid mt-5 contact_head">
+    <div class="col-4">
+      <div class="head_div">
+        <div class="icons"><img src="" alt="" class="img"></div>
+        <h3 class="h2 fw-bold">Location</h3>
+      </div>
+      <div class="content_div">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+
   </div>
 
 
 
-
-  <div class="container-fluids">
+  <div class="container-fluids mt-5">
     <div class="row">
       <div class="col-12">
         <h2 class="fw-bolder">Plan your Next Trip</h2>
@@ -265,7 +269,7 @@
           <input type="text" id="email" name="email" placeholder="insert your email" required>
           <!-- <label for="message">Message:</label> -->
           <textarea id="message" name="message" placeholder="write your message"></textarea>
-          <button type="submit">submit</button>
+          <button class="btns" type="submit">submit</button>
         </form>
       </div>
     </div>

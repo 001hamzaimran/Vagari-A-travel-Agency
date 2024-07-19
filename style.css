@@ -488,33 +488,290 @@ nav {
 
 
 
-.next_adventure{
-  height: 100dvh;
+.next_adventure {
+  height: 140vh;
   width: 100%;
   margin-top: 2rem;
-  padding: 2%;
+  /* background-color: #000; */
+  padding:4rem 2rem;
 }
 
-.adv_img{
+.adv_img {
   height: 60%;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
+  margin: 1rem 0;
   gap: 1rem;
 }
 
-.img_div{
-  border: 1px solid black;
+.img_div {
+  /* border: 1px solid black; */
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  border-radius: 0.6rem;
+  position: relative;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   overflow: hidden;
-  & img{
-    
+
+  & .img1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(public/Assets/adv_africa.jpeg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #00000070;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
   }
+
+  & .img2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(public/Assets/adv_egypt.jpeg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #00000070;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  & .img3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(public/Assets/adv_france.jpeg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #00000070;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  & .img4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(public/Assets/adv_greece.jpeg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #00000070;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.content_adv {
+  padding: 1rem;
+  position: absolute;
+  color: var(--primary-color);
+  display: grid;
+  top: 76.6%;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 4;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  & a>button
+{
+    background-color: var(--secondary-color);
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    color: var(--primary-color);
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+
+}
+
+  
+}
+
+.img_div:hover >.content_adv{
+  top: 30%;
+}
+
+
+
+.thrill_adv_sec{
+  height: 110vh;
+  width: 100%;
+  background-image: url(public/heroparallex1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--primary-color);
+  z-index: 0;
+  
+  &::before{
+    content: "";
+    z-index: -1;
+    background-color: #00000070;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .thrilled_content{
+   height: 80%;
+    width: 55%;
+    z-index: 3;
+
+
+    & .point{
+      padding:.5rem .1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.486);
+    }
+
+    & button{
+      padding:.5rem 2rem;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      border: none;
+      border-radius: .2rem;
+      -webkit-border-radius: .2rem;
+      -moz-border-radius: .2rem;
+      -ms-border-radius: .2rem;
+      -o-border-radius: .2rem;
+}
+  }
+
+  & .slide{
+    height: 80%;
+    width: 45%;
+  }
+}
+
+
+
+
+
+/* Swiper */
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .img{
+    width: 100%;
+    height: 100%;
+    background-image: url("public/Assets/Homeslide2.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  & .img2{
+    width: 100%;
+    background-image: url("public/Assets/Homeslide1.jpeg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Swiper */
+
+
+
+footer{
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  color: white;
+  background-image: url("contact/img/i-parallax-02-slide.jpeg");
+  position: relative;
+  z-index: 0;
+  padding: 8rem 0;
+  
+  
+  &::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #222b38e1;
+  }
+}
+
+
+.footer_address{
+  width: 40%;
 }

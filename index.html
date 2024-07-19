@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vagari|Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="responsive.css" media="screen and (min-width:1200px)">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <!-- bootstrap cdn -->
@@ -15,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-      <a class="navbar-brand" id="nav-brand" href="index.html "><img src="Assets/logo.png" width="100px" alt="logo"
+      <a class="navbar-brand" id="nav-brand" href="index.html "><img src="public/log.png" class="img-fluid" width="200px" alt="logo"
           class="img-fluid gx-0 m-0 "></a>
 
 
@@ -139,7 +140,8 @@
   <section class="choose_your_trip mt-4 ">
     <h3 class="fw-bolder styler_text">Choose Your Trip</h3>
     <h2 class="display-6 fw-semibold  ">Start your Vacation Now</h2>
-    <p class="fw-normal ">Looking for your dream vacation destination but don't know where to start? With the help of experienced and knowledgeable travel agents, you can plan the trip of a lifetime with ease.</p>
+    <p class="fw-normal ">Looking for your dream vacation destination but don't know where to start? With the help of
+      experienced and knowledgeable travel agents, you can plan the trip of a lifetime with ease.</p>
 
 
     <div class="search_bar">
@@ -187,17 +189,17 @@
           <h3>Typologies</h3>
           <select class="form-select form-select-sm" name="cars" id="cars">
             <option value="nothing" selected>Select Destination</option>
-            <option value="Sport Activities" >Sport Activities</option>
-            <option value="Family-Friendly" >Family-Friendly</option>
-            <option value="Road Trip" >Road Trip</option>
-            <option value="Budget Tour" >Budget Tour</option>
-            <option value="Adventure Travel" >Adventure Travel</option>
-            <option value="Eco Tourism" >Eco Tourism</option>
-            <option value="Beach Holidays" >Beach Holidays</option>
-            <option value="Cultural Tours" >Cultural Tours</option>
+            <option value="Sport Activities">Sport Activities</option>
+            <option value="Family-Friendly">Family-Friendly</option>
+            <option value="Road Trip">Road Trip</option>
+            <option value="Budget Tour">Budget Tour</option>
+            <option value="Adventure Travel">Adventure Travel</option>
+            <option value="Eco Tourism">Eco Tourism</option>
+            <option value="Beach Holidays">Beach Holidays</option>
+            <option value="Cultural Tours">Cultural Tours</option>
 
-            </select>
-          
+          </select>
+
         </div>
 
       </div>
@@ -213,34 +215,114 @@
   <section class="next_adventure">
     <div class="adv_content w-50 ">
       <h3 class="styler_text fw-bolder fs-2 ">Next Adventure</h3>
-      <h2 class="display-4 fw-bolder text-start ">Travel Destinations Available Worldwide</h2>
-      <p class="fw-regular">We have compiled a list of top destinations across the globe, scoured the world for the most alluring and fascinating places to visit. From the beautiful beaches of the Caribbean to the majestic mountains of Europe and the vibrant cities of Asia, our destination list has something for everyone</p>
+      <h2 class="display-4 fw-bolder ">Travel Destinations Available Worldwide</h2>
+      <p class="fw-regular">We have compiled a list of top destinations across the globe, scoured the world for the most
+        alluring and fascinating places to visit. From the beautiful beaches of the Caribbean to the majestic mountains
+        of Europe and the vibrant cities of Asia, our destination list has something for everyone</p>
     </div>
 
     <div class="adv_img container-fluid  ">
       <div class="img_div">
-        <img src="public/Assets/adv_africa.jpeg" alt="">
-        <div class="content_adv"></div>
+        <div class="img1"></div>
+        <div class="content_adv">
+          <h4 class="fw-bold">Africa</h4>
+          <p>Embark on a journey for your lifetime</p>
+          <a href="blog/blog2.html"><button>All Packages</button></a>
+        </div>
       </div>
       <div class="img_div">
-        <img src="public/Assets/adv_egypt.jpeg" alt="">
-        <div class="content_adv"></div>
+        <div class="img2"></div>
+        <div class="content_adv">
+          <h4 class="fw-bold">Egypt</h4>
+          <p>Discover the land of pharaohs & pyramids</p>
+          <a href="blog/blog2.html"><button>All Packages</button></a>
+        </div>
       </div>
       <div class="img_div">
-        <img src="public/Assets/adv_france.jpeg" alt="">
-        <div class="content_adv"></div>
+        <div class="img3"></div>
+        <div class="content_adv">
+          <h4 class="fw-bold">France</h4>
+          <p>Indulge in the art, culture, and cuisine</p>
+          <a href="blog/blog2.html"><button>All Packages</button></a>
+        </div>
       </div>
       <div class="img_div">
-        <img src="public/Assets/adv_greece.jpeg" alt="">
-        <div class="content_adv"></div>
+        <div class="img4"></div>
+        <div class="content_adv">
+          <h4 class="fw-bold">Greece</h4>
+          <p>Experience the ancient history & beaches</p>
+          <a href="blog/blog2.html"><button>All Packages</button></a>
+        </div>
       </div>
+    </div>
   </section>
-  
+
+
+
+  <section class="thrill_adv_sec">
+    <div class="slide">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img2"></div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="thrilled_content">
+      <h2 class="styler_text fw-bolder text-white">Adventure Travel</h2>
+      <h2 class="display-3 fw-bold">Embrace the Thrill of the Unknown</h2>
+      <p class="fw-light">Are you tired of the typical tourist destinations and looking to step out of your comfort
+        zone? Adventure travel may be the perfect solution for you! Here are four reasons why you should book an
+        adventure travel experience : </p>
+
+      <p class="point"><i class="fa-solid fa-check mx-4"></i>Connect with nature</p>
+      <p class="point"><i class="fa-solid fa-check mx-4"></i>Experience other cultures</p>
+      <p class="point"><i class="fa-solid fa-check mx-4"></i>Create unforgettable memories</p>
+
+      <button>All Services</button>
+    </div>
+  </section>
+
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="display-5 px-4 fw-bolder">Travel beyond your imagination, with our Travel Agency!</h2>
+      </div>
+      <div class="col-3">
+        <h5 class="fw-bolder">Address</h5>
+        <p class="footer_address ">080 Brickell Ave
+          Miami - Florida
+          U.S. of America</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i> 
+          </div>
+      </div>
+      <div class="col-3 h-100">
+        <h5 class="mb-2 fw-semibold">Contact</h5>
+        <button class="btn btn-md btn-success pb-2">Info@travel.com</button>
+        <h3 class="h2 fw-bold pb-2">+01483593284</h3>
+      </div>
+    </div>
+  </footer>
+  <br>
+  <br>
   <br>
   <br>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  
+
   <script type="module" src="products.js"></script>
   <script type="module" src="main.js"></script>
 </body>

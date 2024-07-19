@@ -1,6 +1,7 @@
 import './style.css';
 import './responsive.css';
 import arrayOfProducts from './products';
+import { Autoplay } from 'swiper/modules';
 
 function hot_Products() {
     let parentContainer = document.querySelector(".hot_Products");
@@ -36,5 +37,25 @@ console.log(parentContainer);
 
 }
 
+function homeSwiperJS() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+}
+
+homeSwiperJS();
 
 hot_Products();
